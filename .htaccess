@@ -1,0 +1,16 @@
+Options -MultiViews
+
+# the below is what allows handling of all redirect urls
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /redirect.php [L,NC,QSA]
+</IfModule>
+
+# deny access to private files
+<Files ~ "(config\.php)|\.(md|gitignore|sql)$">
+    Order allow,deny
+    Deny from all
+</Files>

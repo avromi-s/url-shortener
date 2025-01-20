@@ -1,0 +1,140 @@
+/* main site styles */
+* {
+    /* background-color: #dedede; */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*    !* https://coolors.co/0d1b2a-1b263b-415a77-778da9-e0e1dd *!*/
+    --rich-black: #0d1b2aff;
+    --oxford-blue: #1b263bff;
+    --yinmn-blue: #415a77ff;
+    --silver-lake-blue: #778da9ff;
+    --platinum: #e0e1ddff;
+}
+
+/* center slimmenu menu bar */
+.slimmenu {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+}
+
+main > * {
+    /* center main content for all pages */
+    width: 75%;
+    padding: 1%;
+    margin: 1% auto auto;
+
+    border-radius: 25px;
+    background-color: white;
+    border: 0.1rem solid #53687E;
+    color: #53687E;
+}
+
+h1 {
+    background-color: #33485c;
+    border-radius: 25px;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: #33485c;
+    border-radius: 0;
+}
+
+a:hover {
+    background-color: #33485c;
+    color: white;
+}
+
+a:active {
+    background-color: black
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    max-width: 10vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* form & input styles */
+
+input,
+select,
+textarea {
+    border-radius: 25px;
+    padding: 2%;
+    margin-inline: 2%;
+    margin-block: 0.5%;
+    background-color: white;
+    border: 0.1rem solid #53687E;
+    color: #53687E;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    background-color: white;
+    border: 0.1rem solid #53687E;
+    color: #53687E;
+}
+
+input:active,
+input:focus,
+select:active,
+select:focus,
+textarea:active,
+textarea:focus {
+    border: 0.1rem solid black;
+    background-color: white;
+    color: #53687E;
+}
+
+input:active::placeholder {
+    color: black;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+input[type="submit"] {
+    transform: scale(1.2);
+    border: 0.1rem solid white;
+    background-color: #53687E;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    border: 0.1rem solid white;
+    background-color: black;
+    color: white;
+}
+
+input[type="submit"]:active {
+    background-color: white;
+    border: 0.1rem solid black;
+    color: black;
+}
